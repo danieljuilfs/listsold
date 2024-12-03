@@ -1,0 +1,199 @@
+/* General Styles */
+:root {
+    --primary-color: #00bde7;
+    --secondary-color: #ffcb60;
+    --highlight-color: #d24798;
+    --background-color: #05153b;
+    --text-color: #ffebbb;
+    --heading-color: #ffebbb;
+    --link-hover-color: #3a56a5;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%; 
+    font-family: Arial, sans-serif;
+    background: url('../images/background-tile.jpg') repeat;
+    background-size: cover;
+    color: var(--text-color);
+    display: block;
+    box-sizing: border-box; 
+}
+
+input::placeholder {
+    color: #888; /* Change this to your desired color */
+    font-style: italic; /* Optional: makes the text italic */
+    font-size: 14px; /* Change to your desired size */
+    opacity: 1; /* Ensures the placeholder is fully opaque */
+  }
+  
+a {
+    color: var(--primary-color);
+}
+
+a:hover {
+    color: var(--secondary-color);
+}
+
+a:visited {
+    color: var(--primary-color);
+}
+
+a:focus {
+    color: var(--secondary-color);
+}
+
+a:active {
+    color: var(--highlight-color);
+}
+
+h1 {
+    text-align: center; 
+    margin: 0;
+    padding: 2vh 1vh 2vh 8.33vw; 
+}
+
+h2 {
+    margin: 1vh 0 1vh 0vw; 
+    font-size: 1.5em; 
+    text-align: center;  
+}
+
+.active-link {
+    color: var(--secondary-color);
+}
+
+.black {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px; 
+}
+
+.header {
+    height: 100%;
+    display: grid; 
+    grid-template-columns: 25% 75%;
+}
+
+.header2 {
+    height: 100%;
+    display: grid; 
+    grid-template-columns: 75% 25%;
+}
+
+.item {
+    max-height: 5%; 
+    padding: 5px 0 0 1vw; 
+}
+
+.itemlink {
+    display: inline-block;
+    height: 5%; 
+    color: var(--primary-color)
+}
+
+.icon {
+    text-align: right; 
+    margin-right: 1vw; 
+}
+
+.items {
+    height: 100%; 
+    display: grid; 
+    grid-template-columns: 75% 25%; 
+    grid-auto-rows: min-content; 
+
+}
+
+.leftpad {
+    text-align: left; 
+    padding-left: 3vw; 
+}
+
+.main {
+    height: 90%;
+    width: 90%; 
+    display: grid; 
+    grid-template-columns: 50% 50%;
+    padding: 0; 
+    margin: auto;
+    gap: .5vw; 
+}
+
+.numbering {
+    width: 10px; 
+    padding: 0px 5px 0px 5px; 
+}
+
+.numbers a:focus {
+    color: var(--secondary-color);
+}
+
+.pageheader {
+    display: grid;
+    grid-template-columns: 5% 83% 12%;
+    align-items: center;
+    position: relative; 
+    width: 100%; 
+}
+.pages, .pages2 {
+    width: 100%; 
+    text-align: center; 
+}
+
+.price {
+    height: 5%; 
+    font-size: 14px; 
+}
+
+.realign {
+    text-align: left; 
+    padding-left: 1vw; 
+}
+
+.sales {
+    height: 100%; 
+    display: grid; 
+    width: calc(100% - .34vw);    
+    display: grid; 
+    grid-template-rows: 8% 55% 4% 33%; 
+}
+
+.tooltip {
+    display: grid;
+    grid-template-columns: 25% 75%;
+}
+
+.vendorlist {
+    height: 100%; 
+    display: grid; 
+    width: calc(100% - .34vw);  
+    grid-template-rows: 8% 88% 4%; 
+}
+.vendorname {
+    padding-left: 1vw; 
+}
+
+.vendors {
+    display: grid;
+    grid-template-columns: 25% 75%; 
+    grid-template-rows: repeat(20, 5%); 
+    padding: .5vh 0vw 0vw 0vw;  
+}
+
+.augment {
+    font-size: 12px;
+    color: white; 
+}
+
+.return {
+    padding-top: 1vh;
+    padding-left: 1vw; 
+}
+
+.search {
+    margin: 0;
+    padding: 0; 
+}
+
